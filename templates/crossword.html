@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Crossword Puzzle</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+</head>
+<body>
+  <main class="container">
+      <h1>Crossword Puzzle</h1>
+      <table class="crossword">
+          {% for row in grid %}
+          <tr>
+              {% for cell in row %}
+              <td>{{ cell }}</td>
+              {% endfor %}
+          </tr>
+          {% endfor %}
+      </table>
+      <a href="/" class="button">Generate another</a>
+  </main>
+</body>
+</html>

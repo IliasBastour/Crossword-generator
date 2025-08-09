@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Crossword Puzzle Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+</head>
+<body>
+    <main class="container">
+        <h1>Crossword Puzzle Generator</h1>
+        <form action="/generate" method="POST" class="form">
+            <label for="words">Enter the words (separated by spaces):</label>
+                <input type="text" id="words" name="words" value="{{ previous_words if previous_words else '' }}" placeholder="Example: dog cat house" required/>
+            <label for="width">Width:</label>
+                <input type="number" id="width" name="width" value="{{ previous_width if previous_width else 10 }}" min="5" max="30" required/>
+            <label for="height">Height:</label>
+                <input type="number" id="height" name="height" value="{{ previous_height if previous_height else 10 }}" min="5" max="30" required/>
+            <button type="submit">Generate Crossword Puzzle</button>
+        </form>
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+        <footer>
+            <p>Fill in the words and click generate to create your custom crossword puzzle.</p>
+        </footer>
+    </main>
+</body>
+</html>
