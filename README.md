@@ -1,5 +1,3 @@
-Claro, aquí tienes todo el README escrito completamente en Markdown para que lo copies y pegues directamente sin mezclar nada con el chat:
-
 ````markdown
 # Crossword Generator
 
@@ -18,30 +16,27 @@ A web application built with Python, Flask, HTML, and CSS that allows you to cre
 1. Clone the repository:
    bash
    git clone https://github.com/Helloworld-bot21/Crossword-generator.git
-
-````
-
 2. Navigate into the project directory:
 
-   ```bash
+   bash
    cd Crossword-generator
-   ```
+   
 3. Create and activate a virtual environment:
 
-   ```bash
+   bash
    python -m venv venv
    source venv/bin/activate  # On Windows use: venv\Scripts\activate
-   ```
+   
 4. Install dependencies:
 
-   ```bash
+   bash
    pip install -r requirements.txt
-   ```
+   
 5. Run the Flask app:
 
-   ```bash
+   bash
    flask run
-   ```
+
 6. Open your browser and go to `http://127.0.0.1:5000`
 
 ## Usage
@@ -54,3 +49,6 @@ A web application built with Python, Flask, HTML, and CSS that allows you to cre
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+````
