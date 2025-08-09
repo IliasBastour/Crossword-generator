@@ -14,27 +14,24 @@ A web application built with Python, Flask, HTML, and CSS that allows you to cre
 ## Installation
 
 1. Clone the repository:
-   bash
+
    git clone https://github.com/Helloworld-bot21/Crossword-generator.git
+
 2. Navigate into the project directory:
 
-   bash
    cd Crossword-generator
    
 3. Create and activate a virtual environment:
 
-   bash
    python -m venv venv
    source venv/bin/activate  # On Windows use: venv\Scripts\activate
    
 4. Install dependencies:
 
-   bash
    pip install -r requirements.txt
    
 5. Run the Flask app:
 
-   bash
    flask run
 
 6. Open your browser and go to `http://127.0.0.1:5000`
