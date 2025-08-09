@@ -16,8 +16,9 @@ A web application built with Python, Flask, HTML, and CSS that allows you to cre
 ## Installation
 
 1. Clone the repository:
-   ```bash
+   '''bash
    git clone https://github.com/Helloworld-bot21/Crossword-generator.git
+'''
 ````
 
 2. Navigate into the project directory:
@@ -53,8 +54,3 @@ A web application built with Python, Flask, HTML, and CSS that allows you to cre
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-
-Si quieres también puedo ayudarte a crear el archivo `requirements.txt` con las dependencias que usas. ¿Quieres?
-```
